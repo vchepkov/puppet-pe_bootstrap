@@ -12,6 +12,8 @@ class pe_bootstrap::master (
 ) {
 
   class { '::hiera':
+    owner          => 'pe-puppet',
+    group          => 'pe-puppet',
     hierarchy      => $hierarchy,
     datadir        => $datadir,
     hiera_yaml     => "${::settings::confdir}/hiera.yaml",
@@ -21,4 +23,6 @@ class pe_bootstrap::master (
     create_keys    => $create_keys,
   }
 
+  # Package creates user and group
+  Package <| title == 'pe-puppetserver' |> -> Class['hiera']
 }
