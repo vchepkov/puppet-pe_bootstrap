@@ -1,0 +1,33 @@
+{
+  "name": "vchepkov-pe_bootstrap",
+  "version": "0.0.1",
+  "author": "Vadym Chepkov",
+  "summary": "Puppet Enterprise bootstrap configuration",
+  "license": "Apache-2.0",
+  "source": "https://github.com/vchepkov/puppet-pe_bootstrap",
+  "project_page": "https://github.com/vchepkov/puppet-pe_bootstrap",
+  "issues_url": "https://github.com/vchepkov/puppet-pe_bootstrap/issues",
+  "data_provider": null,
+  "dependencies": [ ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 2016.2.0"
+    }
+  ]
+}
+
