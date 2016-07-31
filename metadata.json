@@ -8,7 +8,12 @@
   "project_page": "https://github.com/vchepkov/puppet-pe_bootstrap",
   "issues_url": "https://github.com/vchepkov/puppet-pe_bootstrap/issues",
   "data_provider": null,
-  "dependencies": [ ],
+  "dependencies": [
+    { 
+      "name": "puppet/hiera",
+      "version_requirement": ">= 2.1.0"
+    }
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
@@ -27,6 +32,10 @@
     {
       "name": "pe",
       "version_requirement": ">= 2016.2.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.5.0"
     }
   ]
 }

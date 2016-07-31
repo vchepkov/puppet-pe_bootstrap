@@ -3,6 +3,7 @@
 	<name>puppet-pe_bootstrap</name>
 	<comment></comment>
 	<projects>
+		<project>hiera</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
